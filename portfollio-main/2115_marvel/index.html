@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sushant Ingavale's Portfolio - Data Engineer & Analyst">
+    <meta name="author" content="Sushant Ingavale">
+
+    <title>Sushant Ingavale | Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <!-- Add a separate CSS file for custom overrides or add to tooplate-style.css -->
+    <link rel="stylesheet" href="css/custom-styles.css">
+
+    <!-- Favicon (Optional but recommended) -->
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+
+    <style>
+        /* Optional: Add some basic styling for project cards if not in custom-styles.css */
+        .project-card {
+            border: 1px solid #eee;
+            transition: box-shadow 0.3s ease-in-out;
+            background-color: #fff; /* Ensure card background is white */
+            border-radius: 8px; /* Slightly rounded corners */
+        }
+        .project-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        .section-title {
+          margin-bottom: 2.5rem !important; /* Consistent bottom margin for titles */
+        }
+        .profile-image {
+          border: 5px solid var(--secondary-color); /* Add a border matching theme */
+        }
+        .card-title {
+            color: var(--primary-color); /* Match title color */
+        }
+        .badge-light {
+            background-color: #e9ecef; /* Lighter badge background */
+            color: #495057; /* Darker text for light badge */
+            font-weight: 500;
+        }
+
+        /* === NEW SKILLS SECTION STYLES === */
+        .skills-section {
+            background-color: #f8f9fa; /* Light background for the section */
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .skills-content-area {
+            background-color: #ffffff; /* White background for the content box */
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .skill-category-group {
+            margin-bottom: 2rem; /* Space between skill categories */
+        }
+        .skill-category-group:last-child {
+            margin-bottom: 0; /* No margin for the last group */
+        }
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color); /* Use theme color */
+            margin-bottom: 1rem; /* Space below title */
+            display: flex; /* Align icon and text */
+            align-items: center; /* Vertically center icon and text */
+        }
+        .category-icon {
+            font-size: 1.5rem; /* Icon size */
+            margin-right: 0.75rem; /* Space between icon and text */
+            color: var(--primary-color); /* Match title color */
+        }
+        .skills-badge-container {
+            display: flex; /* Enable flexbox */
+            flex-wrap: wrap; /* Allow badges to wrap to the next line */
+            gap: 0.75rem; /* Space between badges (modern way) */
+            /* Remove margin from individual badges if using gap */
+        }
+        .skill-badge {
+            display: inline-block; /* Needed if not using flex gap */
+            background-color: var(--secondary-color); /* Use theme accent color */
+            color: var(--white-color); /* White text */
+            padding: 0.4em 0.9em; /* Padding inside the badge */
+            border-radius: 15px; /* Pill shape */
+            font-size: 0.9em; /* Slightly smaller font */
+            font-weight: 500;
+            white-space: nowrap; /* Prevent text wrapping within a badge */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .skill-badge:hover {
+            background-color: var(--primary-color); /* Darken on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        /* Contact Section Enhancements */
+        .contact-card {
+            border: 1px solid #eee;
+            transition: all 0.3s ease-in-out;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .contact-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            object-fit: contain; /* Prevent icon distortion */
+        }
+        .contact-link:hover {
+            text-decoration: none; /* Remove underline on hover for card links */
+        }
+        .contact-info {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 1.5rem !important; /* Override default padding if needed */
+        }
+        .contact-info h4 {
+            color: var(--white-color);
+            font-weight: 600;
+        }
+        .contact-info p a, .social-links a {
+            color: var(--p-color); /* Light text color for links on dark background */
+            transition: color 0.3s ease;
+        }
+        .contact-info p a:hover, .social-links a:hover {
+            color: var(--white-color); /* White on hover */
+        }
+        .social-links i {
+           font-size: 1.6rem !important;
+           transition: transform 0.3s ease;
+        }
+         .social-links a:hover i {
+           transform: scale(1.1);
+        }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Sushant Ingavale</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothscroll"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothscroll"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="#skills" class="nav-link smoothscroll"><span data-hover="Skills">Skills</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link smoothscroll"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothscroll"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+                <!-- Dark Mode Toggle Removed -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 col-md-12 col-12 order-lg-1 order-2 text-center"> <!-- Added text-center -->
+                    <div class="about-image">
+                        <!-- === UPDATE IMAGE PATH HERE === -->
+                        <img src="images/undraw/sushant.jpg" class="img-fluid rounded-circle profile-image" alt="Sushant Ingavale Profile Photo" style="max-width: 300px; height: auto;"> <!-- Adjusted size -->
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center order-lg-2 order-1">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my digital space!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Sushant</span>
+                                    <span class="animated-item">Data Engineer</span>
+                                    <span class="animated-item">Data Analyst</span>
+                                </div>
+                        </h1>
+
+                        <p>Passionate data professional skilled in transforming complex datasets into actionable insights and building robust data pipelines. Experienced in data analysis, engineering principles, and leveraging data to drive decisions.</p>
+
+                        <div class="custom-btn-group mt-4">
+                          <!-- === UPDATE RESUME PATH HERE === -->
+                          <a href="images/undraw/Sushant_resume.pdf" download="Sushant_Ingavale_Resume.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link smoothscroll">Let's Connect</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+      <div class="container">
+            <div class="row">
+                 <div class="col-lg-11 text-center mx-auto col-12">
+                    <div class="col-lg-8 mx-auto">
+                         <h2 class="section-title">Data Projects Showcase</h2>
+                    </div>
+                 </div>
+
+                 <div class="col-lg-10 mx-auto col-12">
+                    <div class="row">
+                        <!-- Project Item 1 -->
+                        <div class="col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch"> <!-- Added d-flex and align-items-stretch -->
+                            <div class="card project-card w-100"> <!-- Added w-100 -->
+                                <!-- Optional: <img src="images/projects/project1.jpg" class="card-img-top" alt="Real-time Dashboard Preview"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Real-time Social Media Trend Dashboard</h3>
+                                    <p class="card-text">Developed a system to track mentions, analyze sentiment, and identify trending topics for specific keywords on Twitter (X) in real-time.</p>
+                                    <div class="mt-auto pt-3"> <!-- Pushed badges to bottom -->
+                                        <span class="badge badge-light mr-1 mb-1">Kafka</span>
+                                        <span class="badge badge-light mr-1 mb-1">Spark Streaming</span>
+                                        <span class="badge badge-light mr-1 mb-1">Python</span>
+                                        <span class="badge badge-light mr-1 mb-1">NLP</span>
+                                        <span class="badge badge-light mb-1">Dashboard</span>
+                                        <div class="project-links mt-2">
+                                            <!-- Add Links Here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Item 2 -->
+                        <div class="col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+                             <div class="card project-card w-100">
+                                <!-- Optional: <img src="images/projects/project2.jpg" class="card-img-top" alt="IoT Anomaly Detection Preview"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">IoT Sensor Data Monitoring & Anomaly Detection</h3>
+                                    <p class="card-text">Built a pipeline to monitor data streams from simulated IoT devices (temperature, humidity), detecting anomalies using statistical methods.</p>
+                                     <div class="mt-auto pt-3">
+                                        <span class="badge badge-light mr-1 mb-1">Python</span>
+                                        <span class="badge badge-light mr-1 mb-1">Pandas</span>
+                                        <span class="badge badge-light mr-1 mb-1">MQTT/Kafka</span>
+                                        <span class="badge badge-light mr-1 mb-1">Statistics</span>
+                                        <span class="badge badge-light mb-1">Visualization</span>
+                                        <div class="project-links mt-2">
+                                            <!-- Add Links Here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Project Item 3 -->
+                         <div class="col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+                            <div class="card project-card w-100">
+                                <!-- Optional: <img src="images/projects/project3_data.jpg" class="card-img-top" alt="Sales Analysis Preview"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">E-commerce Sales Performance Analysis</h3>
+                                    <p class="card-text">Analyzed historical sales data to identify top-performing products, customer segments, and sales trends. Created dashboards to visualize KPIs.</p>
+                                     <div class="mt-auto pt-3">
+                                         <span class="badge badge-light mr-1 mb-1">Python</span>
+                                         <span class="badge badge-light mr-1 mb-1">Pandas</span>
+                                         <span class="badge badge-light mr-1 mb-1">SQL</span>
+                                         <span class="badge badge-light mr-1 mb-1">Matplotlib/Seaborn</span>
+                                         <span class="badge badge-light mb-1">Tableau/Power BI</span>
+                                        <div class="project-links mt-2">
+                                             <!-- Add Links Here -->
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Item 4 -->
+                        <div class="col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+                            <div class="card project-card w-100">
+                                <!-- Optional: <img src="images/projects/project4_data.jpg" class="card-img-top" alt="Churn Prediction Preview"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Customer Churn Prediction Model</h3>
+                                    <p class="card-text">Developed a machine learning model (e.g., Logistic Regression/Random Forest) to predict customer churn based on usage patterns and demographics.</p>
+                                     <div class="mt-auto pt-3">
+                                         <span class="badge badge-light mr-1 mb-1">Python</span>
+                                         <span class="badge badge-light mr-1 mb-1">Scikit-learn</span>
+                                         <span class="badge badge-light mr-1 mb-1">Pandas</span>
+                                         <span class="badge badge-light mr-1 mb-1">Machine Learning</span>
+                                         <span class="badge badge-light mb-1">Classification</span>
+                                        <div class="project-links mt-2">
+                                            <!-- Add Links Here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /inner row -->
+                 </div> <!-- /col-lg-10 -->
+            </div> <!-- /outer row -->
+        </div> <!-- /container -->
+    </section>
+
+    <!-- SKILLS - Revamped Design -->
+    <section class="skills-section" id="skills"> <!-- Removed py-5, added via CSS -->
+        <div class="container">
+            <div class="row mb-5"> <!-- Increased margin bottom -->
+                <div class="col-lg-11 text-center mx-auto col-12">
+                   <div class="col-lg-8 mx-auto">
+                        <h2 class="section-title">Technical Proficiency</h2>
+                   </div>
+                </div>
+            </div>
+
+            <!-- Central container for all skills -->
+            <div class="skills-content-area">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11 col-12">
+
+                        <!-- Category: Programming & Databases -->
+                        <div class="skill-category-group">
+                            <h5 class="category-title"><i class="uil uil-brackets-curly category-icon"></i> Programming & Databases</h5>
+                            <div class="skills-badge-container">
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">SQL</span>
+                                <span class="skill-badge">PostgreSQL</span>
+                                <span class="skill-badge">MySQL</span>
+                                <span class="skill-badge">HTML</span>
+                                <span class="skill-badge">CSS</span>
+                                <span class="skill-badge">JavaScript</span>
+                                <span class="skill-badge">REST API</span>
+                                <!-- <span class="skill-badge">NoSQL (MongoDB)</span> -->
+                            </div>
+                        </div>
+
+                        <!-- Category: Data Processing & ML -->
+                        <div class="skill-category-group">
+                            <h5 class="category-title"><i class="uil uil-robot category-icon"></i> Data Processing & ML</h5>
+                            <div class="skills-badge-container">
+                                <span class="skill-badge">Pandas</span>
+                                <span class="skill-badge">NumPy</span>
+                                <span class="skill-badge">Scikit-learn</span>
+                                <span class="skill-badge">Data Cleaning</span>
+                                <span class="skill-badge">ETL Principles</span>
+                                <span class="skill-badge">Feature Engineering</span>
+                                <span class="skill-badge">Statistics</span>
+                            </div>
+                        </div>
+
+                        <!-- Category: Big Data & Cloud -->
+                        <div class="skill-category-group">
+                             <h5 class="category-title"><i class="uil uil-cloud-database-tree category-icon"></i> Big Data & Cloud</h5>
+                            <div class="skills-badge-container">
+                                <span class="skill-badge">Apache Spark (PySpark)</span>
+                                <span class="skill-badge">Apache Kafka</span>
+                                <span class="skill-badge">AWS S3</span>
+                                <span class="skill-badge">AWS EC2</span>
+                                <span class="skill-badge">AWS RDS</span>
+                                <span class="skill-badge">AWS Glue (Basics)</span>
+                                <span class="skill-badge">Docker (Basics)</span>
+                                <!-- <span class="skill-badge">Airflow</span> -->
+                            </div>
+                        </div>
+
+                        <!-- Category: Visualization & Tools -->
+                        <div class="skill-category-group">
+                             <h5 class="category-title"><i class="uil uil-chart-line category-icon"></i> Visualization & Tools</h5>
+                            <div class="skills-badge-container">
+                                <span class="skill-badge">Tableau</span>
+                                <span class="skill-badge">Power BI</span>
+                                <span class="skill-badge">Matplotlib</span>
+                                <span class="skill-badge">Seaborn</span>
+                                <span class="skill-badge">Git</span>
+                                <span class="skill-badge">GitHub</span>
+                                <span class="skill-badge">Postman</span>
+                                <span class="skill-badge">Jupyter Notebooks</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- /skills-content-area -->
+
+        </div> <!-- /container -->
+    </section>
+
+
+    <!-- RESUME (Experience & Education) -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                  <h2 class="section-title">Experience</h2>
+                    <div class="timeline">
+                        <!-- === PhonePe Experience === -->
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2024</span> <!-- Start Year -->
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Data Engineer</span><small>PhonePe Pvt.Ltd</small></h3>
+                                  <p>Extracted and analyzed large datasets using SQL and Python (Pandas) to identify business trends, user behavior patterns, and performance metrics. Developed interactive dashboards using Tableau/Power BI to track KPIs and presented actionable insights to stakeholders, contributing to data-informed decision-making.</p>
+                             </div>
+                        </div>
+                        <!-- Add other experiences similarly -->
+                        <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                               <span>2023</span> <!-- Start Year -->
+                          </div>
+                          <div class="timeline-info">
+                               <h3><span>Data Analyst</span><small>Aishwaryam Real Estate</small></h3>
+                               <p>Extracted and analyzed large datasets using SQL and Python (Pandas) to identify business trends, user behavior patterns, and performance metrics. Developed interactive dashboards using Tableau/Power BI to track KPIs and presented actionable insights to stakeholders, contributing to data-informed decision-making.</p>
+                          </div>
+                     </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 mt-5 mt-lg-0"> <!-- Added margin top for mobile -->
+                  <h2 class="mb-4 section-title">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025</span> <!-- Expected Grad Year -->
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Master of Computer Applications (MCA)</span><small>ASM's CSIT, Pune</small></h3>
+                                  <p>Focusing on advanced data structures, algorithms, database management systems, machine learning concepts, and software engineering principles. Relevant Coursework: Data Mining, Big Data Analytics, Cloud Computing, Artificial Intelligence.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2023</span> <!-- Grad Year -->
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Bachelor of Science (BSc) - Computer Science</span><small>ASM's CSIT, Pune</small></h3>
+                                <p>Built a strong foundation in computer science fundamentals, including programming (Python, C++, Java), data structures, algorithms, operating systems, and database concepts (SQL).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mr-lg-5 col-12">
+             <h2 class="mb-4 section-title">Let's Connect</h2>
+             <p class="mb-4">Interested in discussing data projects, potential collaborations, or just want to say hi? Feel free to reach out using your preferred method!</p>
+
+            <div class="google-map w-100 mb-4">
+              <!-- Map showing Pradhikaran, Nigdi, Pune -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15120.87679911719!2d73.75832151316223!3d18.654157099978583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9f08e172541%3A0x5bbb3144a58bcacf!2sPradhikaran%2C%20Nigdi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411044!5e0!3m2!1sen!2sin!4v1733917750349!5m2!1sen!2sin" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-info d-flex flex-column"> <!-- Removed padding/background, handled by CSS -->
+                <div class="contact-info-item mb-3">
+                  <h4 class="mb-2">Contact Details</h4>
+                   <p class="footer-text mb-1"><i class="uil uil-phone mr-2"></i><a href="tel:+918767792460">+91 87677 92460</a></p>
+                  <p class="footer-text mb-0"><i class="uil uil-envelope mr-2"></i><a href="mailto:ingawalesushant2003@gmail.com">ingawalesushant2003@gmail.com</a></p>
+                </div>
+
+                 <div class="contact-info-item mt-2"> <!-- Added margin top -->
+                    <h4 class="mb-2">Find me on</h4>
+                    <ul class="social-links list-inline mb-0">
+                         <!-- === ADD ACTUAL SOCIAL LINKS HERE === -->
+                         <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/sushant-ingavale-a95832241/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="uil uil-linkedin"></i></a></li> <!-- TODO: Add actual LinkedIn URL -->
+                         <li class="list-inline-item mr-3"><a href="https://github.com/sushant770" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="uil uil-github"></i></a></li> <!-- TODO: Add actual GitHub URL -->
+                         <!-- <li class="list-inline-item"><a href="#" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="uil uil-twitter"></i></a></li> -->
+                    </ul>
+                 </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+            <div class="contact-options">
+              <h2 class="mb-4 section-title">Get in Touch Instantly</h2>
+              <p class="mb-4">Prefer a quick chat or email? Use the direct links below by clicking on the cards.</p>
+
+              <div class="row">
+                  <!-- WhatsApp Contact Card -->
+                  <div class="col-md-6 col-12 mb-4">
+                    <a href="https://wa.me/918767792460?text=Hello%20Sushant,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="contact-link text-decoration-none"> <!-- Enhanced pre-filled text -->
+                      <div class="card contact-card h-100 text-center py-4 px-3">
+                         <img src="images/undraw/whatsupp.jpeg" alt="WhatsApp" class="contact-icon mx-auto mb-3" style="width: 55px; height: 55px;"> <!-- Slightly smaller icon -->
+                         <div class="card-body p-0">
+                             <h4 class="card-title mb-2" style="font-size: 1.2rem; color: #25D366;">WhatsApp</h4> <!-- Added color -->
+                            <p class="card-text small text-muted">Tap to chat directly.</p> <!-- Muted text -->
+                         </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Email Contact Card -->
+                  <div class="col-md-6 col-12 mb-4">
+                    <a href="mailto:ingawalesushant2003@gmail.com?subject=Portfolio Inquiry - Let's Connect&body=Hi Sushant,%0D%0A%0D%0AI came across your portfolio and I'm interested in discussing..." class="contact-link text-decoration-none"> <!-- Enhanced subject and body -->
+                      <div class="card contact-card h-100 text-center py-4 px-3">
+                         <img src="images/undraw/download.png" alt="Email" class="contact-icon mx-auto mb-3" style="width: 55px; height: 55px;">
+                         <div class="card-body p-0">
+                            <h4 class="card-title mb-2" style="font-size: 1.2rem; color: #D44638;">Email</h4> <!-- Added color -->
+                            <p class="card-text small text-muted">Click to send me a message.</p>
+                         </div>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+            </div>
+             <!-- Optional: Placeholder for a contact form if needed later -->
+             <!--
+             <h2 class="mb-4 mt-5 section-title">Or Send a Message Here</h2>
+             <form action="#" method="get" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
+               <div class="row">
+                 <div class="col-lg-6 col-12">
+                   <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                 </div>
+                 <div class="col-lg-6 col-12">
+                   <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                 </div>
+                 <div class="col-12">
+                   <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                 </div>
+                 <div class="col-lg-5 mx-auto col-7">
+                   <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
+                 </div>
+               </div>
+             </form>
+             -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-4">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <p class="copyright-text text-center mb-0">
+                          Copyright © <span id="currentYear"></span> Sushant Ingavale. All rights reserved.
+                          <br>
+                          <!-- Optional: Theme credit -->
+                          <!-- Design: <a rel="nofollow" target="_blank" href="https://www.tooplate.com">Tooplate</a> -->
+                        </p>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Script for Footer Year & Tooltips -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Footer Year
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+
+        // Initialize Bootstrap Tooltips
+        if (typeof $ !== 'undefined' && typeof $.fn.tooltip !== 'undefined') {
+             $('[data-toggle="tooltip"]').tooltip();
+             // Add smooth scroll functionality to nav links if not handled by custom.js
+             $('.smoothscroll').on('click', function (e) {
+                var target = this.hash;
+                var $target = $(target);
+
+                if ($target.length) { // Check if target element exists
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top - 60 // Adjust offset for fixed navbar
+                    }, 900, 'swing', function () {
+                        // Optional callback after animation completes
+                        // window.location.hash = target; // Manually update the hash if needed
+                    });
+                }
+            });
+
+        } else {
+            console.warn("jQuery or Bootstrap Tooltip/Scroll functionality not fully loaded.");
+        }
+      });
+    </script>
+
+  </body>
+</html>
